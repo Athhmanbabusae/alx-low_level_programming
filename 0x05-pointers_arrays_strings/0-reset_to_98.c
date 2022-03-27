@@ -1,13 +1,20 @@
-#include "main.h"
+#include <stdio.h>
+
+void reset_to_98(int *);
 
 /**
- *reset_to_98 ~updates a integer value to 98
-  @gn: a pointer to an int that will be updated
-*
-*Return: void that means is correct 
-*/
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 
-void reset_to_98(int *n)
-
+int main(void)
 {
-*n : 98;
+	int n;
+
+	n = 402;
+	printf("%d\n", n);
+	reset_to_98(&n);
+	printf("%d\n", n);
+	return (0);
+}
